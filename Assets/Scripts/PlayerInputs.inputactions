@@ -115,7 +115,7 @@
             ]
         },
         {
-            "name": "PlayerGolfing",
+            "name": "GolfSwing",
             "id": "71b98fa0-9b1f-49fb-a41c-8c5dc75a23a9",
             "actions": [
                 {
@@ -153,6 +153,24 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
+                },
+                {
+                    "name": "MousePosition",
+                    "type": "Value",
+                    "id": "0aca5da1-4c2e-4c7c-9239-61e35e5df9a4",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "MouseDelta",
+                    "type": "Value",
+                    "id": "f6823b29-b4f1-4678-897d-d9c83f7db49a",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
                 }
             ],
             "bindings": [
@@ -160,7 +178,7 @@
                     "name": "",
                     "id": "4b0aeead-9266-4c45-968c-e149b5d9ac08",
                     "path": "<Mouse>/leftButton",
-                    "interactions": "Hold",
+                    "interactions": "",
                     "processors": "",
                     "groups": ";KeyboardAndMouse",
                     "action": "Swing",
@@ -171,7 +189,7 @@
                     "name": "",
                     "id": "845aafcf-6158-47f1-b4de-7b1978bf2e1b",
                     "path": "<Mouse>/rightButton",
-                    "interactions": "Hold",
+                    "interactions": "",
                     "processors": "",
                     "groups": ";KeyboardAndMouse",
                     "action": "PracticeSwing",
@@ -219,6 +237,28 @@
                     "processors": "",
                     "groups": ";KeyboardAndMouse",
                     "action": "StopGolfing",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "86d15e3f-bd44-42e5-aaf7-92b98abfc0b7",
+                    "path": "<Mouse>/position",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";KeyboardAndMouse",
+                    "action": "MousePosition",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "ec338f64-8002-4599-9e59-fb1f9e51adf5",
+                    "path": "<Mouse>/delta",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "MouseDelta",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
